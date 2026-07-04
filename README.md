@@ -61,13 +61,7 @@ The main analysis input (`data/pairs_only_P_H.xlsx`) contains, for each of 18,72
 
 > Note: `pairs_only_P_H.xlsx` is ~17 MB. If GitHub upload is inconvenient, it can be regenerated from GSE111835; the CSV datasets are smaller.
 
-## Requirements
 
-Python 3.10+. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Running
 
@@ -87,6 +81,3 @@ Run cells top to bottom. Section 0 installs pinned packages; Section 1 auto-dete
 
 If you use this workflow, please cite the associated manuscript and the underlying software (NumPy, SciPy, pandas, statsmodels, scikit-bio, Biopython).
 
-## License
-
-Not yet specified.
