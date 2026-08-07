@@ -101,7 +101,7 @@ Rscript compare_core_pvals.R   # step 2: rank-based comparison - reproduces the 
 - The criterion is **joint across cohorts**: healthy samples serve as a reference within a single per-sex analysis, so the procedure yields one candidate set per sex. Per-cohort (healthy/FMF) versions of a given sex therefore contain the same taxa with cohort-specific metric columns; they are provided for transparency and are not independent selections.
 - LOSO agreement is an **internal reproducibility/stability check**: at these sample sizes, any two LOSO folds necessarily share most of their data (75–80% of participants in the female strata), so fold-to-fold agreement shows the candidate set is not driven by any single participant, but does not by itself rule out pipeline-level bias reproduced across folds.
 - The genus neighbour-joining trees are **profile trees** built from standardised stability features, not molecular phylogenies; their branching is not bootstrap-supported and is used only descriptively.
-- ALDEx2 and ANCOM-BC are not run directly (they require sequencing read counts / library sizes, which PhyloChip intensities do not have); `limma`, the standard microarray differential-expression method, is used instead as the platform-appropriate contemporary benchmark.
+- `limma`, the standard microarray differential-expression method, is used instead as the platform-appropriate contemporary benchmark.
 
 ## Citation
 
